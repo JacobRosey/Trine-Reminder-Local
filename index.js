@@ -188,3 +188,31 @@ var newsApp = new function(){
         }*/
     }
 }
+
+/* May need this later
+var currentPlayer;
+var playerSrc = "adrienneroseybff7"
+
+function choosePlayer(){
+    const playerArr = 
+    ["Makinze Rominger", "Emersyn Haney", "Amanda Prather",
+     "Adrienne Rosey", "Emma Beyer", "April Sellers",
+     "Anna Koeppl", "Anna Gill", "Angelena Perry", 
+     "Lauren Clausen", "Emily Wheaton", "Mercede Daugherty",
+     "Taylor Murdock", "Lexi Clark", "Ainsley Phillips",
+     "Ellie Trine", "Ashley Swartout", "Giselle Riley",
+     "Elizabeth Koch", "Scarlett Elliot"]
+const playerSrc = 
+    ["makinzeromingersy0k", "emersynhaneyjnrb", "amandapratheruluw",
+     "adrienneroseybff7", "emmabeyeri6zz", "aprilsellersi95s",
+     "annakoeppl38q8", "annagilli8rl", "angelenaperry2scn",
+     "laurenclausenfb4j", "emilywheaton1jym", "mercededaughertyiswy",
+     "taylormurdockgeho", "lexiclark77gr", "ainsleyphillipsmfe9",
+     "ellietrinexhe2", "ashleyswartouta714", "gisellerileybdb8",
+     "elizabethkoch5umu", "scarlettelliott0bvt"]
+
+     currentPlayer = document.getElementById('choose-player').innerHTML
+     let index = playerArr.indexOf(currentPlayer);
+     console.log(index)
+
+}*/

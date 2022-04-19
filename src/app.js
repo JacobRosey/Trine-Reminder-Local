@@ -10,9 +10,9 @@ const statDisplay = document.querySelector('#stats')
 fetch('http://localhost:8000/record')
     .then(response => {return response.json()})
     .then(data => {
-        let overall =  `<h3 id="overall-rec">Overall Record: `+data[0]+`</h3>`
-        let conf = `<h3 id="conf-rec">Conference Record: `+data[2]+`</h3>`
-        let streak = `<h3 id="streak">Current Streak: `+data[4]+`</h3>`
+        let overall =  `<h3 id="overall-rec">Overall Record: <br>`+data[0]+`</h3>`
+        let conf = `<h3 id="conf-rec">Conf. Record: <br>`+data[2]+`</h3>`
+        let streak = `<h3 id="streak">Current Streak: <br>`+data[4]+`</h3>`
 
         recDisplay.innerHTML = overall + conf + streak
     })
@@ -40,10 +40,10 @@ fetch('http://localhost:8000/news')
         console.log(data)
         
         for(let i=0; i<data[0].length; i++){
-            let headline = `<h3 id="headline">`+ data[0][i] +`</h3>`
+            let headline = `<div class="news-div"><h3 id="headline">`+ data[0][i] +`</h3>`
             let date =    `<p id="news-date">`+ data[1][i] +`</p>`
             let link =    `<a id="src" target="_blank" href="`+ data[2][i]+
-                               `"> Click Here to Read More</a><br><br>`
+                               `"> Click Here to Read More</a><br><br></div>`
 
             newsDisplay.innerHTML += headline + date + link
         }
@@ -73,11 +73,13 @@ fetch('http://localhost:8000/schedule')
                 data[0][i] = data[0][i].slice(0, 3)+ " " + data[0][i].slice(3,5)
             }
 
-            let date = `<div id ="background-`+oddeven+`"><h3>`+ data[0][i] +`</h3>`
-            let opponent = `<p>`+ data[1][i] +`</p>`
+            let date = `<div class="animate-div"id ="background-`+oddeven+`"><h3>`+ data[0][i] +`</h3>`
+            let opponent = `<p id="sched-opp">`+ data[1][i] +`</p>`
             let status = `<p id="status">`+ data[2][i] +`</p></div><br>`
             
-            if(data[2][i].includes("Top" || "Bottom")){
+            //includes("Bottom" || "Top") wasn't working for some reason
+            //"of" seems to be fine. I.e. "Top of 2nd" or "Bottom of 4th"
+            if(data[2][i].includes("of")){
                 const liveGame = document.getElementById('game-today')
                 liveGame.classList.remove('hidden')
                 liveGame.classList.add('game-today')
@@ -97,16 +99,35 @@ fetch('http://localhost:8000/schedule')
 function jumpToGame(){
     
     const status = document.querySelectorAll('#status');
+    const anim = document.querySelectorAll('.animate-div')
     let statusArr = []
+
+    const animDuration = {
+        duration: 1500,
+        iterations: 3,
+        fill: 'backwards',
+        easing: 'ease-in-out'
+      }
     //Ideally you would find the next date (starting from today) which exists
     //in the DOM in the schedule section. However, this approach does the job
-    //with much less code
+    //with much less code. Also added animation so user easily finds next game
 
     for(let i=0; i<status.length; i++){
         statusArr.push(status[i].innerHTML) 
         if(status[i].innerHTML.includes("PM" || "AM")){
             status[i].scrollIntoView(true)
-            window.scrollBy(0, -55)
+            if(window.innerWidth >= 400){
+                window.scrollBy(0, -55)
+            } else {window.scrollBy(0, -110)}
+            let divBackground = anim[i].style.backgroundColor; 
+            const foundGame = [
+                       {backgroundColor: divBackground},
+                       {transform: 'scale(1.05)'},
+                       {backgroundColor: 'rgb(206, 194, 135)'},
+                       {transform: 'scale(1)'},
+                       {backgroundColor: divBackground}];
+            //Add animation to div
+            setTimeout(() => {anim[i].animate(foundGame, animDuration)}, 500)
             return;   
         } 
     } alert('Season is Over! See you next year')
