@@ -138,6 +138,60 @@ body {
   margin-top: -1px;
 }
 
+.game-today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2em;
+  margin-left: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.25em;
+  border-radius: 2em;
+  background-color: #b4b4b4;
+  -webkit-animation-name: breathe;
+          animation-name: breathe;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.game-today #emoji {
+  position: absolute;
+  margin-left: 3em;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  color: var(--primary-color);
+  -webkit-animation-name: softball;
+          animation-name: softball;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.game-today p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--primary-color);
+  margin-left: 6em;
+}
+
+.game-today p #game-live {
+  font-size: .5em;
+}
+
+.game-today p #game-link {
+  text-decoration: underline;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 #next-game {
   color: var(--primary-color);
   font-weight: bold;
@@ -247,7 +301,7 @@ h2 {
   margin-top: 2em;
   margin-bottom: 2em;
   font-size: 1.25em;
-  border-radius: 5em;
+  border-radius: 2em;
   background-color: #b4b4b4;
   -webkit-animation-name: breathe;
           animation-name: breathe;
@@ -352,7 +406,7 @@ a {
     margin-bottom: 2em;
     font-size: 1em;
     width: 90%;
-    border-radius: 3em;
+    border-radius: 2em;
     background-color: #b4b4b4;
     -webkit-animation-name: breathe;
             animation-name: breathe;
@@ -718,6 +772,55 @@ a {
     width: 100%;
     margin: auto;
   }
+  .game-today {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    border-radius: 2em;
+    background-color: #b4b4b4;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today #emoji {
+    position: absolute;
+    margin-left: 2em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    -webkit-animation-name: softball;
+            animation-name: softball;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-left: 4.5em;
+  }
+  .game-today p #game-live {
+    font-size: .5em;
+  }
+  .game-today p #game-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
   #next-game {
     margin-right: 2.5em;
   }
@@ -765,6 +868,55 @@ a {
     -ms-grid-columns: (65px)[8];
         grid-template-columns: repeat(8, 65px);
     margin-left: 1.5em;
+  }
+  .game-today {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    border-radius: 2em;
+    background-color: #b4b4b4;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today #emoji {
+    position: absolute;
+    margin-left: 3em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    -webkit-animation-name: softball;
+            animation-name: softball;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-left: 6em;
+  }
+  .game-today p #game-live {
+    font-size: .5em;
+  }
+  .game-today p #game-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
   }
   #news #headline {
     width: 100%;
@@ -822,6 +974,55 @@ a {
     width: 100%;
     margin: auto;
   }
+  .game-today {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    border-radius: 25px;
+    background-color: #b4b4b4;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today #emoji {
+    position: absolute;
+    margin-left: 2.5em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    -webkit-animation-name: softball;
+            animation-name: softball;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-left: 5.5em;
+  }
+  .game-today p #game-live {
+    font-size: .5em;
+  }
+  .game-today p #game-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
   #next-game {
     margin-right: 3.25em;
   }
@@ -867,6 +1068,55 @@ a {
         grid-template-columns: repeat(8, 80px);
     margin-left: 4em;
   }
+  .game-today {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    border-radius: 25px;
+    background-color: #b4b4b4;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today #emoji {
+    position: absolute;
+    margin-left: 2.5em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    -webkit-animation-name: softball;
+            animation-name: softball;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-left: 6em;
+  }
+  .game-today p #game-live {
+    font-size: .5em;
+  }
+  .game-today p #game-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
   #feed #background-odd {
     -ms-grid-columns: (210px)[3];
         grid-template-columns: repeat(3, 210px);
@@ -909,6 +1159,55 @@ a {
         grid-template-columns: repeat(8, 110px);
     margin-left: 1em;
   }
+  .game-today {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    border-radius: 25px;
+    background-color: #b4b4b4;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today #emoji {
+    position: absolute;
+    margin-left: 4em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    -webkit-animation-name: softball;
+            animation-name: softball;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-left: 10em;
+  }
+  .game-today p #game-live {
+    font-size: .5em;
+  }
+  .game-today p #game-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
   #next-game {
     margin-right: 5.25em;
   }
@@ -931,6 +1230,55 @@ a {
     -ms-grid-columns: (120px)[8];
         grid-template-columns: repeat(8, 120px);
     margin-left: 2em;
+  }
+  .game-today {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 6em;
+    margin-left: 6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    border-radius: 25px;
+    background-color: #b4b4b4;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today #emoji {
+    position: absolute;
+    margin-left: 8em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    -webkit-animation-name: softball;
+            animation-name: softball;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-left: 12em;
+  }
+  .game-today p #game-live {
+    font-size: .5em;
+  }
+  .game-today p #game-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
   }
   #next-game {
     margin-right: 6em;
@@ -968,6 +1316,56 @@ a {
         grid-template-columns: repeat(8, 150px);
     margin-left: 2em;
     font-size: 1.25em;
+  }
+  .game-today {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 6em;
+    margin-left: 6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    border-radius: 25px;
+    background-color: #b4b4b4;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today #emoji {
+    position: absolute;
+    margin-left: 8em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    -webkit-animation-name: softball;
+            animation-name: softball;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today p {
+    font-size: 1.25em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-left: 12em;
+  }
+  .game-today p #game-live {
+    font-size: .5em;
+  }
+  .game-today p #game-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
   }
   #next-game {
     margin-right: 10em;
@@ -1052,6 +1450,56 @@ a {
   }
   #stats #stat-num {
     padding-left: 3.25em;
+  }
+  .game-today {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 1.25em;
+    border-radius: 25px;
+    background-color: #b4b4b4;
+    -webkit-animation-name: breathe;
+            animation-name: breathe;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today #emoji {
+    position: absolute;
+    margin-left: 8em;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    -webkit-animation-name: softball;
+            animation-name: softball;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .game-today p {
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+    margin-left: 12em;
+  }
+  .game-today p #game-live {
+    font-size: .5em;
+  }
+  .game-today p #game-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+    cursor: pointer;
   }
   #news {
     display: -ms-grid;

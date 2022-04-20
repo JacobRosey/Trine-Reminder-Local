@@ -87,6 +87,49 @@ body{
     }
     
 }
+.game-today{
+        display: flex;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 2em;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+    #emoji{
+        position: absolute;
+        margin-left: 3em;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        color: var(--primary-color);
+        animation-name: softball;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+    p{
+        //font-size: 1.75em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: var(--primary-color);
+        margin-left: 6em;
+
+        #game-live{
+            font-size: .5em;
+        }
+        #game-link{
+            text-decoration: underline;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+    }
+}
 #next-game{
     color: var(--primary-color);
     font-weight: bold;
@@ -178,7 +221,7 @@ h2{
     margin-top: 2em;
     margin-bottom: 2em;
     font-size: 1.25em;
-    border-radius: 5em;
+    border-radius: 2em;
     background-color: rgb(180, 180, 180);
     animation-name: breathe;
     animation-duration: 4s;
@@ -267,7 +310,7 @@ a{
         margin-bottom: 2em;
         font-size: 1em;
         width: 90%;
-        border-radius: 3em;
+        border-radius: 2em;
         background-color: rgb(180, 180, 180);
         animation-name: breathe;
         animation-duration: 4s;
@@ -593,7 +636,7 @@ a{
 
 @media only screen and (min-width: 501px) and (max-width: 550px){
     #record{
-        color: rgb(180, 180, 180);
+        color:rgb(180, 180, 180);
         grid-template-columns: repeat(3, 165px);
         margin: auto;
     }
@@ -610,6 +653,49 @@ a{
         #headline{
             width: 100%;
             margin: auto;
+        }
+    }
+    .game-today{
+        display: flex;
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 2em;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+        #emoji{
+            position: absolute;
+            margin-left: 2em;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            animation-name: softball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        p{
+            //font-size: 1.75em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-left: 4.5em;
+    
+            #game-live{
+                font-size: .5em;
+            }
+            #game-link{
+                text-decoration: underline;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
         }
     }
     #next-game{
@@ -657,6 +743,49 @@ a{
     #stats{
         grid-template-columns: repeat(8, 65px);
         margin-left: 1.5em;
+    }
+    .game-today{
+        display: flex;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 2em;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+        #emoji{
+            position: absolute;
+            margin-left: 3em;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            animation-name: softball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        p{
+            //font-size: 1.75em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-left: 6em;
+    
+            #game-live{
+                font-size: .5em;
+            }
+            #game-link{
+                text-decoration: underline;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
     }
     #news{
         #headline{
@@ -717,6 +846,49 @@ a{
             margin: auto;
         }
     }
+    .game-today{
+        display: flex;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 25px;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+        #emoji{
+            position: absolute;
+            margin-left: 2.5em;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            animation-name: softball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        p{
+            //font-size: 1.75em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-left: 5.5em;
+    
+            #game-live{
+                font-size: .5em;
+            }
+            #game-link{
+                text-decoration: underline;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
+    }
     #next-game{
         margin-right: 3.25em;
     }
@@ -760,6 +932,50 @@ a{
         grid-template-columns: repeat(8, 80px);
         margin-left: 4em;
     }
+    .game-today{
+        display: flex;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 25px;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+        #emoji{
+            position: absolute;
+            margin-left: 2.5em;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            animation-name: softball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        p{
+            //font-size: 1.75em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-left: 6em;
+    
+            #game-live{
+                font-size: .5em;
+            }
+            #game-link{
+                text-decoration: underline;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
+    }
+    
     #feed{
         #background-odd{
             grid-template-columns: repeat(3, 210px);
@@ -799,6 +1015,49 @@ a{
         grid-template-columns: repeat(8, 110px);
         margin-left: 1em;
     }
+    .game-today{
+        display: flex;
+        margin-right: 4em;
+        margin-left: 4em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 25px;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+        #emoji{
+            position: absolute;
+            margin-left: 4em;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            animation-name: softball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        p{
+            //font-size: 1.75em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-left: 10em;
+    
+            #game-live{
+                font-size: .5em;
+            }
+            #game-link{
+                text-decoration: underline;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
+    }
     #next-game{
         margin-right: 5.25em;
     }
@@ -820,6 +1079,49 @@ a{
     #stats{
         grid-template-columns: repeat(8, 120px);
         margin-left: 2em;
+    }
+    .game-today{
+        display: flex;
+        margin-right: 6em;
+        margin-left: 6em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 25px;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+        #emoji{
+            position: absolute;
+            margin-left: 8em;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            animation-name: softball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        p{
+            //font-size: 1.75em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-left: 12em;
+    
+            #game-live{
+                font-size: .5em;
+            }
+            #game-link{
+                text-decoration: underline;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
     }
     #next-game{
         margin-right: 6em;
@@ -854,6 +1156,49 @@ a{
         grid-template-columns: repeat(8, 150px);
         margin-left: 2em;
         font-size: 1.25em;
+    }
+    .game-today{
+        display: flex;
+        margin-right: 6em;
+        margin-left: 6em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 25px;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+        #emoji{
+            position: absolute;
+            margin-left: 8em;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            animation-name: softball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        p{
+            font-size: 1.25em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-left: 12em;
+    
+            #game-live{
+                font-size: .5em;
+            }
+            #game-link{
+                text-decoration: underline;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
     }
     #next-game{
         margin-right: 10em;
@@ -935,6 +1280,49 @@ a{
         }
         #stat-num{
             padding-left: 3.25em;
+        }
+    }
+    .game-today{
+        display: flex;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 1.25em;
+        border-radius: 25px;
+        background-color: rgb(180, 180, 180);
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    
+        
+        #emoji{
+            position: absolute;
+            margin-left: 8em;
+            padding-top: 12px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            animation-name: softball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        p{
+            font-size: 1.5em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: var(--primary-color);
+            margin-left: 12em;
+    
+            #game-live{
+                font-size: .5em;
+            }
+            #game-link{
+                text-decoration: underline;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
         }
     }
     #news{
